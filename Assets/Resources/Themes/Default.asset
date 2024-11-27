@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940e2cdaa8a6b44b59ae6912bee051f1, type: 3}
+  m_Name: Default
+  m_EditorClassIdentifier: 
+  <BackgroundColor>k__BackingField: {r: 0.7815504, g: 0.81775755, b: 0.8584906, a: 1}
+  <BoundaryColor>k__BackingField: {r: 0.80914026, g: 0.8109741, b: 0.8207547, a: 1}
+  <BorderColorA>k__BackingField: {r: 0.9622642, g: 0.88262016, b: 0.748932, a: 0.9019608}
+  <BorderColorB>k__BackingField: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 0.9019608}
+  <GridColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0.02745098}
+  <CardColor>k__BackingField: {r: 0.9, g: 0.89086497, b: 0.8811, a: 1}
+  <CardOutlineColor>k__BackingField: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  source: {fileID: 0}
+  copyFrom: 0

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5f8c888f09a4989b8cf3394780cd98, type: 3}
+  m_Name: Resources
+  m_EditorClassIdentifier: 
+  <WireFollower>k__BackingField: {fileID: 2806217624396642091, guid: 4681152321e59ed43b8c4cf012a5f1f3, type: 3}
+  <BackgroundMaterial>k__BackingField: {fileID: 2100000, guid: 75f8f98ff2be39841afb16f3bb6d2813, type: 2}
+  <BoundaryBorderMaterial>k__BackingField: {fileID: 2100000, guid: 7a0d3c78c0ad34acd9ca7843c08147f9, type: 2}
+  <HightlightGridMaterial>k__BackingField: {fileID: 2100000, guid: 33bb317de48fd4c36be89ad5dc907e08, type: 2}
+  <NodeMaterial>k__BackingField: {fileID: 2100000, guid: 3157e6ff0ec6b194aa77ec3fdb3d03d3, type: 2}
+  <NodeDarkMaterial>k__BackingField: {fileID: 2100000, guid: 043fa501df5c71c46bf87a4dce270dc5, type: 2}
+  <HandleMaterial>k__BackingField: {fileID: 2100000, guid: 20251d34118fab944b62ed45f1131054, type: 2}
+  <HandleShadowMaterial>k__BackingField: {fileID: 2100000, guid: a24ce2a0132e9594aa4f3e1f5894fe07, type: 2}
+  <HandleIndicatorMaterial>k__BackingField: {fileID: 2100000, guid: 83be20909cbe249dba643500e849228e, type: 2}
+  <WireMaterial>k__BackingField: {fileID: 2100000, guid: 4b16cd8e71ec1504d862f75db9574726, type: 2}
+  <SplitFlapMaterial>k__BackingField: {fileID: 2100000, guid: 1482d622c3dbd4c758272c350b157114, type: 2}
+  <MarqueeMaterial>k__BackingField: {fileID: 2100000, guid: 94c0ef5cd51484e8e8c7c4c78e4c861f, type: 2}
+  <Outline>k__BackingField: {fileID: -1108049385951744901, guid: ad24e98d6ce89ba40a39d34275e03fc2, type: 2}
+  <HighlightOutline>k__BackingField: {fileID: 9201806638727479248, guid: ad24e98d6ce89ba40a39d34275e03fc2, type: 2}
+  <MarqueeOutline>k__BackingField: {fileID: 5111983924257132841, guid: ad24e98d6ce89ba40a39d34275e03fc2, type: 2}
