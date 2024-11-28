@@ -18,14 +18,12 @@ namespace JoyCraft.Global {
         private GameState currentState;
         private Context context;
         
-        public ResourceList Resources {get; private set;}
         public EventHandler EventHandler {get; private set;}
 
         public GameManager (GameState initalState  = GameState.Menu) {
             App.Current.LogHandler.Log("Initialized Game Manager");
             EventHandler = new EventHandler();
             
-            LoadResourceList();
             SetGameState (initalState);
         }
 
@@ -43,10 +41,6 @@ namespace JoyCraft.Global {
                     CreateContext();
                     break;
             }
-        }
-
-        private void LoadResourceList() {
-            Resources = UnityEngine.Resources.Load<ResourceList>(RESOURCE_LIST_PATH);
         }
 
         private void CreateContext() {

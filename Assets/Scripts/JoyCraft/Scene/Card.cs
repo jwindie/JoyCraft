@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 
 namespace JoyCraft.Scene {
-    public class Card : AbstractGrabbit {
+    public class Card : Grabbit {
         // Constants
         private static readonly Vector3 PARENT_POSITION_OFFSET = new Vector3 (0, -0.4f, -0.02f);
         private static MaterialPropertyBlock propBlock;
@@ -70,7 +70,7 @@ namespace JoyCraft.Scene {
             if (!selected) return;
 
             if (collision.TryGetComponent (out Card otherCard)) {
-                SelectedCardHandler.Current.OnSelectedTriggerEnter (otherCard);
+                CardHandler.Current.OnSelectedTriggerEnter (otherCard);
             }
         }
 
@@ -78,7 +78,7 @@ namespace JoyCraft.Scene {
             if (!selected) return;
 
             if (collision.TryGetComponent (out Card otherCard)) {
-                SelectedCardHandler.Current.OnSelectedTriggerExit (otherCard);
+                CardHandler.Current.OnSelectedTriggerExit (otherCard);
             }
         }
 
@@ -105,14 +105,14 @@ namespace JoyCraft.Scene {
             Start ();
         }
 
-        public override AbstractGrabbit Grab (Vector3 mousePoint) {
+        public override Grabbit Grab (Vector3 mousePoint) {
             selected = true;
             AnimateWiggle ();
             lerpToZero = false;
             return base.Grab (mousePoint - grabOffset);
         }
 
-        public override AbstractGrabbit Release () {
+        public override Grabbit Release () {
             selected = false;
             lerpToZero = true;
             AnimateWiggle ();
@@ -133,7 +133,7 @@ namespace JoyCraft.Scene {
 
         public void SetRoot (Card root) {
             RootCard = root;
-            GetComponent<Colorize> ().SetColor (root.Color);
+            //GetComponent<Colorize> ().SetColor (root.Color);
             if (ChildCard) ChildCard.SetRoot (root);
         }
 

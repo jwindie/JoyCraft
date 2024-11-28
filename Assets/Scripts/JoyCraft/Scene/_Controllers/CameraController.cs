@@ -1,5 +1,4 @@
-﻿using PlugNPlay.Interaction;
-using JoyCraft.Application;
+﻿using JoyCraft.Application;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -31,7 +30,7 @@ namespace JoyCraft.Scene {
         private RaycastHit2D raycastHit;
         private Card card;
         private List<Transform> grabbitGroupTransformsWithoutParent = new List<Transform> ();
-        private IOutline lastOutlineObject;
+        private Grabbit lastOutlineObject;
         private bool drawingMarquee, overCollider;
         private object lastClickedObject, lastRaycastedObject;
         private MultiClicker multiClicker = new MultiClicker ();
@@ -73,7 +72,7 @@ namespace JoyCraft.Scene {
             //handle mouse releases
             if (App.Current.InputHandler.LeftMouseUp) {
                 CursorController.Current.SetCursor (CursorController.Current.HandCursor);
-                SelectedCardHandler.Current.ClearSelection ();
+                CardHandler.Current.ClearSelection ();
                 //if (grabbit) ReleaseGrabbit ();
             }
 
@@ -84,7 +83,7 @@ namespace JoyCraft.Scene {
             if (App.Current.InputHandler.LeftMouseDown) HandleLeftClick ();
 
             //check for grabbit selection
-            if (SelectedCardHandler.Current.HasSelection) {
+            if (CardHandler.Current.HasSelection) {
                 //}
                 //if (grabbit) {
                 //pass data to the grabbit's onUpdate function
@@ -97,7 +96,7 @@ namespace JoyCraft.Scene {
                     position = worldMousePosition
                 };
                 //grabbit.OnUpdate (onUpdateData);
-                SelectedCardHandler.Current.OnUpdate (updateData);
+                CardHandler.Current.OnUpdate (updateData);
             }
             //do a raycast into the scene if mouse has moved
             DoRaycast (worldMousePosition);
@@ -150,7 +149,7 @@ namespace JoyCraft.Scene {
 
                 Vector3 worldSpaceMousePosition = mainCamera.ScreenToWorldPoint (Input.mousePosition);
                 //grabbit.Grab (worldSpaceMousePosition);
-                SelectedCardHandler.Current.SetSelection (card, worldSpaceMousePosition);
+                CardHandler.Current.SetSelection (card, worldSpaceMousePosition);
             }
         }
 
@@ -162,14 +161,14 @@ namespace JoyCraft.Scene {
             if (raycastHit.collider) {
                 CursorController.Current.SetCursor (CursorController.Current.HandCursor);
                 overCollider = true;
-                OutlineCollider (raycastHit.collider);
+                if (!CardHandler.Current.HasSelection) OutlineCollider (raycastHit.collider);
                 //Debug.Log ("Highlight");
             }
             else {
                 CursorController.Current.SetCursor (CursorController.Current.DefaultCursor);
                 //grabbit = null;
                 overCollider = false;
-                ClearLastOutline ();
+                if (!CardHandler.Current.HasSelection) ClearLastOutline ();
                 //Debug.Log ("Remove Highlight");
             }
 
@@ -193,13 +192,13 @@ namespace JoyCraft.Scene {
         }
 
         private void ClearLastOutline () {
-            lastOutlineObject?.DisableOutline ();
+            if (lastOutlineObject) lastOutlineObject.DisableOutline ();
             lastOutlineObject = null;
         }
 
         private void OutlineCollider (Collider2D collider) {
-            lastOutlineObject?.DisableOutline ();
-            (lastOutlineObject = collider.GetComponent<IOutline> ())?.EnableOutline ();
+            if (lastOutlineObject) lastOutlineObject.DisableOutline ();
+            (lastOutlineObject = collider.GetComponent<Grabbit> ())?.EnableOutline ();
         }
 
         private void ReleaseGrabbit () {

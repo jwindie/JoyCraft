@@ -22,7 +22,7 @@ namespace JoyCraft.Scene {
             return;
         }
 
-        public override AbstractGrabbit Grab (Vector3 mousePoint) {
+        public override Grabbit Grab (Vector3 mousePoint) {
             return SpawnNewCardInstead ();
         }
 
@@ -37,6 +37,8 @@ namespace JoyCraft.Scene {
             c.SetColor (colors[index]);
             c.transform.position = transform.position;
 
+            //disable outline on object
+            DisableOutline ();
             return c;
         }
     }

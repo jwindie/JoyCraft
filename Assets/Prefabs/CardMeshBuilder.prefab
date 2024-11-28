@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 46301709250604074}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.041}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46,13 +46,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 757d67eeb89f4fe40a06924b8ebda86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 1.4
-  height: 1.65
+  width: 1.35
+  height: 1.6
   meshFilter: {fileID: 2568142044237596849}
   collider: {fileID: 0}
   meshName: default_card_border
   build: 0
-  CornerRadius: 0.17
+  CornerRadius: 0.145
   CornerRadii:
   - 0
   - 0

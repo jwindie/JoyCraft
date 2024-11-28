@@ -1210,10 +1210,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26e817b8d42247728945a408e09ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 0.252314, g: 0.4495715, b: 0.509434, a: 1}
-  inactiveColor: {r: 0.16078432, g: 0.25882354, b: 0.2901961, a: 1}
-  fontColor: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
-  inactiveFontColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
+  color:
+    r: 0.252314
+    g: 0.4495715
+    b: 0.509434
+    a: 1
+  inactiveColor:
+    r: 0.16078432
+    g: 0.25882354
+    b: 0.2901961
+    a: 1
+  fontColor:
+    r: 0.13333334
+    g: 0.13333334
+    b: 0.13333334
+    a: 1
+  inactiveFontColor:
+    r: 0.44705883
+    g: 0.44705883
+    b: 0.44705883
+    a: 1
   behindTint: 0.3
   width: 3.46
   isActive: 0
@@ -1928,10 +1944,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26e817b8d42247728945a408e09ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 0.252314, g: 0.4495715, b: 0.509434, a: 1}
-  inactiveColor: {r: 0.16078432, g: 0.25882354, b: 0.2901961, a: 1}
-  fontColor: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
-  inactiveFontColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
+  color:
+    r: 0.252314
+    g: 0.4495715
+    b: 0.509434
+    a: 1
+  inactiveColor:
+    r: 0.16078432
+    g: 0.25882354
+    b: 0.2901961
+    a: 1
+  fontColor:
+    r: 0.13333334
+    g: 0.13333334
+    b: 0.13333334
+    a: 1
+  inactiveFontColor:
+    r: 0.44705883
+    g: 0.44705883
+    b: 0.44705883
+    a: 1
   behindTint: 0.3
   width: 4.54
   isActive: 0
@@ -2804,10 +2836,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26e817b8d42247728945a408e09ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 0.252314, g: 0.4495715, b: 0.509434, a: 1}
-  inactiveColor: {r: 0.16078432, g: 0.25882354, b: 0.2901961, a: 1}
-  fontColor: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
-  inactiveFontColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
+  color:
+    r: 0.252314
+    g: 0.4495715
+    b: 0.509434
+    a: 1
+  inactiveColor:
+    r: 0.16078432
+    g: 0.25882354
+    b: 0.2901961
+    a: 1
+  fontColor:
+    r: 0.13333334
+    g: 0.13333334
+    b: 0.13333334
+    a: 1
+  inactiveFontColor:
+    r: 0.44705883
+    g: 0.44705883
+    b: 0.44705883
+    a: 1
   behindTint: 0.3
   width: 1.94
   isActive: 0
@@ -4956,10 +5004,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26e817b8d42247728945a408e09ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 0.252314, g: 0.4495715, b: 0.509434, a: 1}
-  inactiveColor: {r: 0.16078432, g: 0.25882354, b: 0.2901961, a: 1}
-  fontColor: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
-  inactiveFontColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
+  color:
+    r: 0.252314
+    g: 0.4495715
+    b: 0.509434
+    a: 1
+  inactiveColor:
+    r: 0.16078432
+    g: 0.25882354
+    b: 0.2901961
+    a: 1
+  fontColor:
+    r: 0.13333334
+    g: 0.13333334
+    b: 0.13333334
+    a: 1
+  inactiveFontColor:
+    r: 0.44705883
+    g: 0.44705883
+    b: 0.44705883
+    a: 1
   behindTint: 0.3
   width: 1.8
   isActive: 1
@@ -7149,10 +7213,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26e817b8d42247728945a408e09ea26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 0.252314, g: 0.4495715, b: 0.509434, a: 1}
-  inactiveColor: {r: 0.16078432, g: 0.25882354, b: 0.2901961, a: 1}
-  fontColor: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
-  inactiveFontColor: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 1}
+  color:
+    r: 0.252314
+    g: 0.4495715
+    b: 0.509434
+    a: 1
+  inactiveColor:
+    r: 0.16078432
+    g: 0.25882354
+    b: 0.2901961
+    a: 1
+  fontColor:
+    r: 0.13333334
+    g: 0.13333334
+    b: 0.13333334
+    a: 1
+  inactiveFontColor:
+    r: 0.44705883
+    g: 0.44705883
+    b: 0.44705883
+    a: 1
   behindTint: 0.3
   width: 2.42
   isActive: 0
